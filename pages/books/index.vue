@@ -5,6 +5,7 @@ const { data, posts } = usePostsStore();
 
 <template>
   <div>
+    <Header />
     <div>this is books index vue</div>
     <div>{{ `${data} is the message from store` }}</div>
     <div>{{ posts }}</div>
