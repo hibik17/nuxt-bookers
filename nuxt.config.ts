@@ -1,6 +1,8 @@
 // nuxt.config.js
 export default defineNuxtConfig({
   // ... other options
+  buildModules: ["@nuxtjs/tailwindcss"],
+  css: ["@/assets/css/tailwind.css"],
   modules: [
     // ...
     [
