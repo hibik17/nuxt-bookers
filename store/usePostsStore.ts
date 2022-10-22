@@ -9,7 +9,10 @@ export const usePostsStore = defineStore("usePostsStore", () => {
   onMounted(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/comments?postId=1")
-      .then((res) => posts.push(...res.data));
+      .then((res) => {
+        posts.push(...res.data);
+        console.log(res.data);
+      });
   });
 
   return { data, posts };
