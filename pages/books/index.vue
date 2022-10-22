@@ -8,6 +8,17 @@ const { data, posts } = usePostsStore();
     <Header />
     <div>this is books index vue</div>
     <div>{{ `${data} is the message from store` }}</div>
-    <div>{{ posts }}</div>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
