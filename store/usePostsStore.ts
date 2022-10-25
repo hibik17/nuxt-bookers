@@ -1,19 +1,28 @@
 import { defineStore } from "pinia";
 import axios from "axios";
 
-export const usePostsStore = defineStore("usePostsStore", () => {
-  const data = "this is from pinia";
+type PostType = {
+  postId: number;
+  id: number;
+  name: string;
+  email: string;
+  body: string;
+};
 
+export const usePostsStore = defineStore("usePostsStore", () => {
   // all posts
-  const posts = reactive([]);
+  const posts = reactive<Array<PostType>>([]);
+
   onMounted(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/comments?postId=1")
+      .get<Array<PostType>>(
+        "https://jsonplaceholder.typicode.com/comments?postId=1"
+      )
       .then((res) => {
         posts.push(...res.data);
         console.log(res.data);
       });
   });
 
-  return { data, posts };
+  return { posts };
 });

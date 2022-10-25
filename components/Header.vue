@@ -1,3 +1,11 @@
 <template>
-  <div>this is header</div>
+  <div class="w-full h-[70px] bg-gray-400">
+    <nav>
+      <ul class="flex justify-end flex-end">
+        <li class="mr-3">menu</li>
+        <li class="mr-3">home</li>
+        <li class="mr-3">books</li>
+      </ul>
+    </nav>
+  </div>
 </template>
