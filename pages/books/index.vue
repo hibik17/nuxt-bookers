@@ -6,7 +6,7 @@ const { posts } = usePostsStore();
 <template>
   <div class="w-full min-h-screen">
     <Header />
-    <div class="w-full mx-5 animate animate-pulse">
+    <div class="container w-full mx-auto animate animate-pulse">
       <table class="mt-10 table-auto bg-slate-200">
         <thead>
           <tr>
