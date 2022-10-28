@@ -1,28 +1,43 @@
 <script setup lang="ts">
 import { usePostsStore } from "../../store/usePostsStore";
 const { posts } = usePostsStore();
+
+const pressedButton = () => {
+  alert("button was pressed");
+};
 </script>
 
 <template>
   <div class="w-full min-h-screen">
     <Header />
-    <div class="container w-full mx-auto animate animate-pulse">
-      <table class="mt-10 table-auto bg-slate-200">
-        <thead>
-          <tr>
-            <th>post name</th>
-            <th>post body</th>
-            <th>post email</th>
-          </tr>
-        </thead>
-        <tbody v-for="post in posts">
-          <tr :key="post.id">
-            <td>{{ post.name }}</td>
-            <td>{{ post.body }}</td>
-            <td>{{ post.email }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container grid w-full grid-cols-3 gap-2 mx-auto">
+      <div class="col-span-1 transition duration-150 ease-out bg-red-300">
+        this is right content
+        <div
+          class="w-[60px] h-8 font-serif text-white bg-green-300 rounded-md btn hover:bg-purple-300 text-center hover:ease-in"
+          @click="pressedButton"
+        >
+          button
+        </div>
+      </div>
+      <div class="col-span-2">
+        <table class="table-auto bg-slate-200">
+          <thead>
+            <tr>
+              <th>post name</th>
+              <th>post body</th>
+              <th>post email</th>
+            </tr>
+          </thead>
+          <tbody v-for="post in posts">
+            <tr :key="post.id">
+              <td>{{ post.name }}</td>
+              <td>{{ post.body }}</td>
+              <td>{{ post.email }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </template>
