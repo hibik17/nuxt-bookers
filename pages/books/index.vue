@@ -12,13 +12,7 @@ const pressedButton = () => {
     <Header />
     <div class="container grid w-full grid-cols-3 gap-2 mx-auto">
       <div class="col-span-1 transition duration-150 ease-out bg-red-300">
-        this is right content
-        <div
-          class="w-[60px] h-8 font-serif text-white bg-green-300 rounded-md btn hover:bg-purple-300 text-center hover:ease-in"
-          @click="pressedButton"
-        >
-          button
-        </div>
+        <Form />
       </div>
       <div class="col-span-2">
         <table class="table-auto bg-slate-200">
