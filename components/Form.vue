@@ -21,6 +21,13 @@
           Cancel
         </button>
       </div>
+      <div class="flex items-center py-2 border-b border-teal-500">
+        <input
+          type="week"
+          placeholder="www.amazon.com"
+          class="w-full px-2 py-1 mr-3 leading-tight text-gray-700 bg-transparent border-none appearance-none focus:outline-none"
+        />
+      </div>
     </form>
   </div>
 </template>
