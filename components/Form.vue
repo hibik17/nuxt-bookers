@@ -24,10 +24,10 @@
           class="w-full px-2 py-1 mr-3 leading-tight text-gray-700 bg-transparent border-none appearance-none focus:outline-none"
         />
       </div>
-      <div class="w-full h-auto mx-auto">
+      <div class="flex items-center w-full">
         <button
           @click="addBook"
-          class="w-8 h-auto text-gray-200 bg-green-300 rounded-md btn"
+          class="px-4 py-2 font-semibold bg-transparent border border-teal-200 rounded-md text-sky-300"
         >
           Add
         </button>
