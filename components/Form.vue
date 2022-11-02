@@ -24,7 +24,7 @@
           class="w-full px-2 py-1 mr-3 leading-tight text-gray-700 bg-transparent border-none appearance-none focus:outline-none"
         />
       </div>
-      <div class="flex items-center w-full">
+      <div class="mt-2 text-center">
         <button
           @click="addBook"
           class="px-4 py-2 font-semibold bg-transparent border border-teal-200 rounded-md text-sky-300"
