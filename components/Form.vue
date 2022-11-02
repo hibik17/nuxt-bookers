@@ -7,6 +7,7 @@
           type="text"
           placeholder="title"
           aria-label="Full name"
+          v-model="newBook.title"
         />
       </div>
       <div class="items-center py-2 border-b border-teal-500">
@@ -15,6 +16,7 @@
           type="text"
           placeholder="description"
           aria-label="Full name"
+          v-model="newBook.body"
         />
       </div>
       <div class="flex items-center py-2 border-b border-teal-500">
@@ -26,7 +28,7 @@
       </div>
       <div class="mt-2 text-center">
         <button
-          @click="addBook"
+          @click.prevent="addBook"
           class="px-4 py-2 font-semibold bg-transparent border border-teal-200 rounded-md text-sky-300"
         >
           Add
@@ -38,5 +40,5 @@
 
 <script setup lang="ts">
 import { useBookStore } from "~~/store/useBookStore";
-const { addBook } = useBookStore();
+const { addBook, newBook } = useBookStore();
 </script>
