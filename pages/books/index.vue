@@ -11,11 +11,11 @@ const pressedButton = () => {
   <div class="w-full min-h-screen">
     <Header />
     <div class="container grid w-full grid-cols-3 gap-2 mx-auto">
-      <div class="col-span-1 transition duration-150 ease-out bg-red-300">
+      <div class="col-span-1 my-auto transition duration-150 ease-out">
         <Form />
       </div>
       <div class="col-span-2">
-        <table class="table-auto bg-slate-200">
+        <table class="table-auto">
           <thead>
             <tr>
               <th>post name</th>
