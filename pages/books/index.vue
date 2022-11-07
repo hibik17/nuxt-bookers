@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { usePostsStore } from "../../store/usePostsStore";
 const { posts } = usePostsStore();
-
-const pressedButton = () => {
-  alert("button was pressed");
-};
 </script>
 
 <template>

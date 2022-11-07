@@ -14,8 +14,11 @@ export const useBookStore = defineStore("useBookStore", () => {
   const books: Array<Book> = reactive<Array<Book>>([]);
 
   const addBook = () => {
-    console.log(`title: ${newBook.title}`);
-    console.log(`body: ${newBook.body}`);
+    books.push({
+      title: newBook.title,
+      body: newBook.body,
+    });
+    console.log(`new book was added : ${books}`);
   };
 
   const deleteBook = (index: number) => {
