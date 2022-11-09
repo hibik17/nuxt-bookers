@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { usePostsStore } from "../../store/usePostsStore";
 const { posts } = usePostsStore();
+
+import { useBookStore } from "../../store/useBookStore";
+const { books } = useBookStore();
 </script>
 
 <template>
