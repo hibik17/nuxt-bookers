@@ -2,7 +2,7 @@
 import { usePostsStore } from "../../store/usePostsStore";
 import { useBookStore } from "../../store/useBookStore";
 const { posts } = usePostsStore();
-const { newBook } = useBookStore();
+const { books } = useBookStore();
 </script>
 
 <template>
@@ -16,16 +16,14 @@ const { newBook } = useBookStore();
         <table class="table-auto">
           <thead>
             <tr>
-              <th>post name</th>
-              <th>post body</th>
-              <th>post email</th>
+              <th>title</th>
+              <th>description</th>
             </tr>
           </thead>
-          <tbody v-for="post in posts">
-            <tr :key="post.id">
-              <td>{{ post.name }}</td>
-              <td>{{ post.body }}</td>
-              <td>{{ post.email }}</td>
+          <tbody v-for="(book, index) in books">
+            <tr :key="index">
+              <td>{{ book.title }}</td>
+              <td>{{ book.body }}</td>
             </tr>
           </tbody>
         </table>

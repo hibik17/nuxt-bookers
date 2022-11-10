@@ -26,5 +26,5 @@ export const useBookStore = defineStore("useBookStore", () => {
     console.log("削除が完了しました");
   };
 
-  return { newBook, addBook, deleteBook };
+  return { newBook, addBook, deleteBook, books };
 });
