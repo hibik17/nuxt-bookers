@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { usePostsStore } from "../../store/usePostsStore";
+// import { usePostsStore } from "../../store/usePostsStore";
 import { useBookStore } from "../../store/useBookStore";
-const { posts } = usePostsStore();
+// const { posts } = usePostsStore();
 const { books } = useBookStore();
 </script>
 
 <template>
   <div class="w-full min-h-screen">
     <Header />
-    <div class="container grid w-full grid-cols-3 gap-2 mx-auto">
+    <div class="container grid w-full min-h-screen grid-cols-3 gap-2 mx-auto">
       <div class="col-span-1 my-auto transition duration-150 ease-out">
         <Form />
       </div>
