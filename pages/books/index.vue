@@ -2,7 +2,7 @@
 // import { usePostsStore } from "../../store/usePostsStore";
 import { useBookStore } from "../../store/useBookStore";
 // const { posts } = usePostsStore();
-const { books } = useBookStore();
+const { books, deleteBook } = useBookStore();
 </script>
 
 <template>
@@ -18,12 +18,16 @@ const { books } = useBookStore();
             <tr>
               <th>title</th>
               <th>description</th>
+              <th></th>
             </tr>
           </thead>
           <tbody v-for="(book, index) in books">
             <tr :key="index">
               <td>{{ book.title }}</td>
               <td>{{ book.body }}</td>
+              <th>
+                <button @click="deleteBook(index)">delete</button>
+              </th>
             </tr>
           </tbody>
         </table>
