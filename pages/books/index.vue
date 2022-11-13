@@ -13,7 +13,7 @@ const { books, deleteBook } = useBookStore();
         <Form />
       </div>
       <div class="col-span-2">
-        <table class="table-auto">
+        <table class="w-full mt-3 text-center table-fixed">
           <thead>
             <tr>
               <th>title</th>
