@@ -4898,6 +4898,16 @@ vue-router@^4.1.5:
   dependencies:
     "@vue/devtools-api" "^6.1.4"
 
+vue-toast-notification@^3.0:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/vue-toast-notification/-/vue-toast-notification-3.0.4.tgz#dfd6ff37daa99be18f13c3e56dc0074fe3f3cdbe"
+  integrity sha512-rEhLtcKg8SVdBpdN7PrNst5nmY8dw0j3NkNImqurhlGurqR/QDKoou0t2PuCReEOCTKqHvfLCle2I3kwQWDWDQ==
+
+vue-toasted@^1.1.28:
+  version "1.1.28"
+  resolved "https://registry.yarnpkg.com/vue-toasted/-/vue-toasted-1.1.28.tgz#dbabb83acc89f7a9e8765815e491d79f0dc65c26"
+  integrity sha512-UUzr5LX51UbbiROSGZ49GOgSzFxaMHK6L00JV8fir/CYNJCpIIvNZ5YmS4Qc8Y2+Z/4VVYRpeQL2UO0G800Raw==
+
 vue@^3.2.41:
   version "3.2.41"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.41.tgz#ed452b8a0f7f2b962f055c8955139c28b1c06806"
