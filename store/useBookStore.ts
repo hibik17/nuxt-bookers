@@ -6,7 +6,7 @@ export type Book = {
 };
 
 export const useBookStore = defineStore("useBookStore", () => {
-  const newBook = reactive<Book>({
+  let newBook = reactive<Book>({
     title: "",
     body: "",
   });
@@ -19,6 +19,11 @@ export const useBookStore = defineStore("useBookStore", () => {
       body: newBook.body,
     });
     console.log(`new book was added : ${books}`);
+
+    newBook = {
+      title: "",
+      body: "",
+    };
   };
 
   const deleteBook = (index: number) => {

@@ -28,7 +28,7 @@
       </div>
       <div class="mt-2 text-center">
         <button
-          @click.prevent="addBook"
+          @click="addBook"
           class="px-4 py-2 font-semibold bg-transparent border border-teal-200 rounded-md text-sky-300"
         >
           Add
