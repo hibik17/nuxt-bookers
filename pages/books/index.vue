@@ -26,7 +26,12 @@ const { books, deleteBook } = useBookStore();
               <td>{{ book.title }}</td>
               <td>{{ book.body }}</td>
               <th>
-                <button @click="deleteBook(index)">delete</button>
+                <button
+                  @click="deleteBook(index)"
+                  class="px-2 py-1 font-mono text-white bg-red-500 rounded-md hover:bg-red-600 hover:text-gray-200"
+                >
+                  delete
+                </button>
               </th>
             </tr>
           </tbody>
