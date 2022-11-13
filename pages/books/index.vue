@@ -1,9 +1,4 @@
-<script setup lang="ts">
-// import { usePostsStore } from "../../store/usePostsStore";
-import { useBookStore } from "../../store/useBookStore";
-// const { posts } = usePostsStore();
-const { books, deleteBook } = useBookStore();
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="w-full min-h-screen">
@@ -13,29 +8,7 @@ const { books, deleteBook } = useBookStore();
         <Form />
       </div>
       <div class="col-span-2">
-        <table class="w-full mt-3 text-center table-fixed">
-          <thead>
-            <tr>
-              <th>title</th>
-              <th>description</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody v-for="(book, index) in books">
-            <tr :key="index">
-              <td>{{ book.title }}</td>
-              <td>{{ book.body }}</td>
-              <th>
-                <button
-                  @click="deleteBook(index)"
-                  class="px-2 py-1 font-mono text-white bg-red-500 rounded-md hover:bg-red-600 hover:text-gray-200"
-                >
-                  delete
-                </button>
-              </th>
-            </tr>
-          </tbody>
-        </table>
+        <Table />
       </div>
     </div>
   </div>
