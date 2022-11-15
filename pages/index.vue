@@ -13,7 +13,7 @@
             to="/books"
             class="pt-[30px] font-semibold text-gray-800 animate-ping duration-500"
           >
-            ようこそbookers(Nuxt版)へ
+            ようこそbookers(Nuxt版)へ hello welocome to nuxt bookers
           </NuxtLink>
         </div>
       </div>
