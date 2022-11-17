@@ -18,6 +18,7 @@
           >
             delete
           </button>
+          <button @click="editClick">edit</button>
         </th>
       </tr>
     </tbody>
@@ -27,4 +28,8 @@
 <script setup lang="ts">
 import { useBookStore } from "../store/useBookStore";
 const { books, deleteBook } = useBookStore();
+
+const editClick = () => {
+  alert("edit button was pressed check it out");
+};
 </script>
