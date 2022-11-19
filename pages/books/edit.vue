@@ -5,5 +5,5 @@
 <script setup lang="ts">
 import { bookType } from "~~/components/types/bookType";
 
-const book = reactive<bookType>({});
+const book = reactive<bookType>({ title: "", description: "" });
 </script>
