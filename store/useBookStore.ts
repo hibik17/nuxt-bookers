@@ -31,5 +31,11 @@ export const useBookStore = defineStore("useBookStore", () => {
     console.log("削除が完了しました");
   };
 
+  const judge = (book: Book) => {
+    newBook.title == book.title
+      ? "this is the new book"
+      : "this book already exist";
+  };
+
   return { newBook, addBook, deleteBook, books };
 });
